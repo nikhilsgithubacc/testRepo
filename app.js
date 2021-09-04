@@ -25,6 +25,7 @@ app.post('/api/login', (req, res, next) =>{
     })
 });
 
+
 app.post('/api/protected', verifyToken, (req, res, next) => {
 
     // verify the recieved token by adding verifyToken middleware on above line and  below function 
